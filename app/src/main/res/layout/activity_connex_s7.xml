@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controllers.ConnexS7Activity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="5dp"
+        android:src="@drawable/siemens" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Choix de l'A.P.I."
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/et_Ip"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Adresse IP"
+            android:background="@drawable/border"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/et_Rack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Rack"
+            android:background="@drawable/border"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/et_Slot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Slot"
+            android:background="@drawable/border"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_Comprime"
+        android:onClick="onMainClickManager"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="COMPRIME"
+        android:background="@drawable/button_round"/>
+
+    <Button
+        android:id="@+id/bt_Regulateur"
+        android:onClick="onMainClickManager"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="REGULATEUR"
+        android:background="@drawable/button_round"/>
+
+    <Button
+        android:id="@+id/Bt_data_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestion utilisateurs"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        android:onClick="onMainClickManager"/>
+
+</LinearLayout>
